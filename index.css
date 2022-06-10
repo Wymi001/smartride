@@ -65,7 +65,7 @@
   text-decoration: none;
 }
 
-* nav ul ul {
+* nav ul #transport {
   background-color: lightgrey;
   padding: 15px;
   width: 50%;
@@ -73,9 +73,10 @@
   top: 50px;
   display: none;
   text-align: center;
+  z-index: 100;
 }
 
-* nav ul ul li {
+* nav ul #transport li {
   margin-left: 0;
 }
 
@@ -106,6 +107,7 @@
     text-align: right;
     top: 80px;
     display: none;
+    z-index: 100;
   }
   * nav ul li {
     margin: 10px;

@@ -59,7 +59,7 @@ nav{
      }
     }
 
-    ul{
+    #transport{
      background-color: $background-color;
      padding: 15px;
      width: 50%;
@@ -67,6 +67,7 @@ nav{
      top: 50px;
      display: none;
      text-align: center;
+     z-index: 100;
 
      li{
       margin-left: 0;
@@ -102,6 +103,7 @@ nav{
    text-align: right;
    top: 80px;
    display: none;
+   z-index: 100;
 
    li {
     margin: 10px;

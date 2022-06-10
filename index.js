@@ -5,18 +5,18 @@
   // 
 
 // SHOW NAV LINKS AFTER CLICKING
- function showLinks() {
+function showLinks() {
   document.getElementById ("openIcon").style.display = "none";
   document.getElementById("navLinks").style.display = "block";
   document.getElementById ("navLinks").style.marginTop = "0";
   document.getElementById("closeIcon").style.display = "block";
- }
+}
 // HIDE NAV LINKS AFTER CLICKING
- function hideLinks() {
+function hideLinks() {
   document.getElementById("navLinks").style.display = "none";
   document.getElementById("closeIcon").style.display = "none";
   document.getElementById ("openIcon").style.display = "block";
- }
+}
 
 // REVEAL AND HIDE SUB-MENU
 function revealSubLinks() {
