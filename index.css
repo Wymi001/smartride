@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100;200;400&family=Roboto:wght@100;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+* nav {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  background-color: lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* nav .brandname {
+  margin-left: 50px;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+* nav .brandname a {
+  text-decoration: none;
+  color: grey;
+}
+
+* nav .brandname a span {
+  color: blueviolet;
+}
+
+* nav ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-right: 50px;
+}
+
+* nav ul li {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+* nav ul li a {
+  text-decoration: none;
+  color: grey;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+* nav ul li a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+* nav ul ul {
+  background-color: lightgrey;
+  padding: 15px;
+  width: 50%;
+  position: absolute;
+  top: 50px;
+  display: none;
+  text-align: center;
+}
+
+* nav ul ul li {
+  margin-left: 0;
+}
+
+* nav .icon-1 {
+  display: none;
+}
+
+* nav .icon-2 {
+  display: none;
+}
+
+* .hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(./assets/asset5.jpg) center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/asset5.jpg) center/cover;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+@media only screen and (max-width: 700px) {
+  * nav .brandname {
+    margin-left: 30px;
+  }
+  * nav ul {
+    position: absolute;
+    background-color: lightgrey;
+    width: 100%;
+    text-align: right;
+    top: 80px;
+    display: none;
+  }
+  * nav ul li {
+    margin: 10px;
+    padding: 10px;
+  }
+  * nav ul li:hover {
+    background-color: blueviolet;
+  }
+  * nav ul li a {
+    color: grey;
+  }
+  * nav ul li a:hover {
+    color: #fff;
+  }
+  * nav ul ul {
+    position: absolute;
+    background-color: lightgrey;
+    right: 200px;
+    top: 40px;
+    left: 0;
+    width: 70%;
+    display: none;
+  }
+  * nav ul ul li a {
+    color: grey;
+  }
+  * nav .icon-1 {
+    margin-right: 30px;
+    color: grey;
+    display: block;
+  }
+  * nav .icon-2 {
+    display: none;
+    margin-right: 30px;
+    color: grey;
+  }
+}
+/*# sourceMappingURL=index.css.map */

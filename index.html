@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c7dfdd3a9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" />
+    <title>smartRide</title>
+  </head>
+  <body>
+    <nav>
+      <div class="brandname">
+        <a href="index.html">smart<span>Ride</span>&#8482</a>
+      </div>
+      <ul id="navLinks">
+        <li onmouseover="hideSubLinks()"><a href="index.html" class="active">Home</a></li>
+        <li><a href="" onmouseover="revealSubLinks()" onmouseout="revealSubLinks()">Transport</a></li>
+        <ul class="sub-menu" id="transport">
+          <li><a href="">KASMAG MOTORS</a></li>
+          <li><a href="">YOUNG LEGACY MOTORS</a></li>
+          <li><a href="">MUFSUF MOTORS</a></li>
+          <li><a href="">KASMAG MOTORS</a></li>
+          <li><a href="">YOUNG LEGACY MOTORS</a></li>
+          <li><a href="">MUFSUF MOTORS</a></li>
+          <li><a href="">KASMAG MOTORS</a></li>
+          <li><a href="">YOUNG LEGACY MOTORS</a></li>
+          <li><a href="">MUFSUF MOTORS</a></li>
+        </ul>
+        <li onmouseover="hideSubLinks()"><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="#loginForm" class="login" onclick="displayLogin()">LOGIN</a></li>
+      </ul>
+      <a href="javascript:void(0)" class="icon-1" id="openIcon" onclick="showLinks()"
+        ><i class="fas fa-bars"></i
+      ></a>
+      <a href="javascript:void(0)" class="icon-2" id="closeIcon" onclick="hideLinks()"><i class="fas fa-times"></i
+      ></a>
+    </nav>
+    <section class="hero">
+      
+    </section>
+    
+      
+    <script src="index.js"></script>
+  </body>
+</html>
