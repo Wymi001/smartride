@@ -48,7 +48,11 @@
       </div>
       <div class="center-div">
         <ul class="option-list">
-        <li><a href="#">Road Trip</a></li>
+        <li><a href="#" onclick="displayOptions()" id="trip-type">Road Trip</a></li>
+        <ul id="dropdown-trip">
+          <li><a href="#">One Way</a></li>
+          <li><a href="#">Round</a></li>
+        </ul>
         <li><a href="#">Passenger</a></li>
         <li><a href="#">Convenience</a></li>
       </ul>
@@ -56,8 +60,8 @@
         <input type="text" class="from-where" placeholder="From where? (city/park)">
         <input type="text" class="to-where" placeholder="To where? (city/park)">
         <div class="dates">
-        <input type="text" class="date-input" placeholder="Leaving on?">
-        <input type="text" class="date-input" placeholder="Returning on?">
+        <input type="date" class="date-input">
+        <input type="date" class="date-input">
         <input type="submit" class="cta" value="Let's Go">
         </div>
       </form>

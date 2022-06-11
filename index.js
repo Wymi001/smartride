@@ -31,3 +31,7 @@ function hideSubLink() {
 function closeNav() {
   document.getElementById("transport").style.display = "none";
 }
+
+function displayOptions(){
+  document.getElementById('dropdown-trip').style.display = 'block';
+}

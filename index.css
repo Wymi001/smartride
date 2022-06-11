@@ -162,6 +162,13 @@
   text-decoration: none;
 }
 
+* .hero .center-div .option-list #dropdown-trip {
+  position: absolute;
+  list-style-type: none;
+  top: 40px;
+  display: none;
+}
+
 * .hero .center-div form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,7 +194,10 @@
 
 * .hero .center-div form .dates .date-input {
   width: 15vw;
-  padding: 20px 0 20px 10px;
+  padding: 20px 10px;
+  border: none;
+  outline: none;
+  color: blueviolet;
 }
 
 * .hero .center-div form .dates .cta {
