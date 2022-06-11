@@ -2,6 +2,7 @@
 $primary-color: blueviolet;
 $font: "Poppins";
 $background-color: lightgrey;
+$gradient: linear-gradient(rgba(156, 67, 239, 0.50), rgba(64, 40, 86, 0.50));
 
 // FONTS
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100;200;400&family=Roboto:wght@100;300&display=swap');
@@ -82,12 +83,120 @@ nav{
    }
 }
 .hero{
- background: linear-gradient(rgba(0,0,0,0.70), rgba(0, 0, 0, 0.70)), url(./assets/asset5.jpg) center/cover;
+ background: linear-gradient(rgba(0,0,0,0.70), rgba(0, 0, 0, 0.50)), url(./assets/asset5.jpg) center/cover;
  width: 100%;
- height: 90vh;
+ height: 80vh;
  position: relative;
- 
 
+ .instruction{
+  height: 120px;
+  position: absolute;
+  top: 20px;
+  left: 130px;
+  bottom: 0;
+  h3{
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 500;
+  }
+  a{
+    color: #fff;
+    font-size: 1.3em;
+    padding: 10px 25px;
+
+    &:hover{
+      text-decoration: none;
+      background: $gradient;
+    }
+  }
+ }
+
+ .center-div{
+  background: $gradient;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 250px;
+  width: 80vw;
+  padding: 0 20px 0 0;
+
+  .option-list {
+      position: absolute;
+      display: flex;
+      list-style: none;
+      top: 20px;
+      left: 20px;
+  
+      li {
+        margin-right: 10px;
+        font-size: 1.2em;
+        background-color: $primary-color;
+        border-radius: 5px;
+        padding: 8px 25px;
+  
+        a {
+          color: #fff;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+ }
+ form{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 20px;
+
+    .from-where, .to-where {
+      width: 18vw;
+      padding: 20px 0 20px 10px;
+      margin-right: 15px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+    .dates{
+      display: flex;
+      
+      .date-input{
+        width: 15vw;
+        padding: 20px 0 20px 10px;
+      }
+      .cta{
+        margin-left: 15px;
+        padding: 20px 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: $primary-color;
+        color: #fff;
+      }
+    }
+    ::placeholder{
+      color: $primary-color;
+    }
+ }
+ .flexible{
+  display: flex;
+  justify-content: end;
+
+  a{
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 10px;
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .checkbox{
+   height: 20px;
+   width: 20px;
+   margin-top: 20px;
+  }
+ }
+}
 }
 
 @media only screen and (max-width:700px) {
