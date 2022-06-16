@@ -9,7 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./main.css"/>
     <title>smartRide</title>
   </head>
   <body>
@@ -33,7 +33,7 @@
         </ul>
         <li onmouseover="hideSubLinks()"><a href="">About</a></li>
         <li><a href="">Contact</a></li>
-        <li><a href="#loginForm" class="login" onclick="displayLogin()">LOGIN</a></li>
+        <li><a href="login.html" class="login" onclick="displayLogin()">LOGIN</a></li>
       </ul>
       <a href="javascript:void(0)" class="icon-1" id="openIcon" onclick="showLinks()"
         ><i class="fas fa-bars"></i
@@ -43,32 +43,50 @@
     </nav>
     <section class="hero">
       <div class="instruction">
-        <h3>Search and book with your favorite transport company</h3>
+        <h3>Search and book with your favorite transport company</h3><br>
         <a class="booking" href="#">Make bookings</a>
       </div>
       <div class="center-div">
         <ul class="option-list">
         <li><a href="#" onclick="displayOptions()" id="trip-type">Road Trip</a></li>
-        <ul id="dropdown-trip">
+        <!-- <ul id="dropdown-trip">
           <li><a href="#">One Way</a></li>
           <li><a href="#">Round</a></li>
-        </ul>
+        </ul> -->
         <li><a href="#">Passenger</a></li>
         <li><a href="#">Convenience</a></li>
       </ul>
-      <form action="#">
-        <input type="text" class="from-where" placeholder="From where? (city/park)">
-        <input type="text" class="to-where" placeholder="To where? (city/park)">
-        <div class="dates">
-        <input type="date" class="date-input">
-        <input type="date" class="date-input">
-        <input type="submit" class="cta" value="Let's Go">
+      <div class="container form">
+        <div class="row">
+          <div class="col-md-6 wrap">
+              <div class="col-md-6 destination">
+                <input type="text" class="from-where" placeholder="From where? (city/park)">
+              </div>
+            <div class="col-md-6 destination">
+              <input type="text" class="to-where" placeholder="To where? (city/park)">
+            </div>
+            <div class="col-md-6 date">
+              <input type="date" class="date-input">
+            </div>
+            <div class="col-md-6 date">
+              <input type="date" class="date-input">
+            </div>
+          <div class="col-md-12">
+            <input type="submit" class="cta" value="Let's Go">
+          </div>
+          <div class="col-md-12">
+            <div class="flexible">
+              <input type="checkbox" class="checkbox">
+              <a href="#">My dates are flexible (+/- 3days)</a>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-6 img-container">
+            <img class="right-banner" src="./assets/asset1bg.png" alt="A Big Bus">
+          </div>
         </div>
-      </form>
-      <div class="flexible">
-        <input type="checkbox" class="checkbox">
-        <a href="#">My dates are flexible (+/- 3days)</a>
       </div>
+      
       </div>
     </div>
       
