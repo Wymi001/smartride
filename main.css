@@ -218,7 +218,31 @@ body .hero .center-div .img-container .right-banner {
   margin-left: -120px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
+  body .hero {
+    background-image: url(./assets/asset3.jpg);
+  }
+  body img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body nav {
+    padding: 0 30px;
+  }
+  body .hero {
+    padding: 0 30px;
+  }
+  body .hero .instruction h3 {
+    font-size: 1.4em;
+  }
+  body img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
   body nav {
     padding: 0 30px;
   }
