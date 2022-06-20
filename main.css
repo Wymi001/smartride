@@ -263,6 +263,10 @@ body .hero .center-div .img-container .right-banner {
   body .hero .instruction h3 {
     font-size: 1.4em;
   }
+  body .hero .center-div .option-list a {
+    margin: 20px 10px;
+    padding: 10px 15px;
+  }
   body .hero .right-banner {
     display: none;
   }

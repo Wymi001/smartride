@@ -250,6 +250,15 @@ $fonts: "Poppins";
        font-size: 1.4em;
       }
      }
+     .center-div{
+      .option-list {     
+          a {
+            margin: 20px 10px;
+            padding: 10px 15px;
+          }
+        }
+     }
+     
      .right-banner{
       display: none;
      }
