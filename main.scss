@@ -8,9 +8,11 @@ $fonts: "Poppins";
  margin: 0;
  padding: 0;
  box-sizing: border-box;
+}
+
  body {
    font-family: $fonts;
-   background-color: #1B1B1E;
+   background-color: #345995;
 
    nav{
     position: relative;
@@ -20,16 +22,17 @@ $fonts: "Poppins";
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1B1B1E;
+    background-color: #345995;
     z-index: 50;
 
     .brandname{
      a{
       color: #fff;
       font-size: 1.5em;
+      font-weight: 900;
 
       span{
-       color: #0267C1;
+       color: #000;
       }
       &:hover{
        text-decoration: none;
@@ -41,13 +44,14 @@ $fonts: "Poppins";
      li{
       margin-left: 30px;
       list-style: none;
-      color: #0267C1;
+      
 
       a{
-
+        font-weight: bold;
+        color: #fff;
        &:hover{
         text-decoration: none;
-        color: blue;
+        // color: #fff;
        }
       }
 
@@ -59,8 +63,8 @@ $fonts: "Poppins";
       text-align: center;
       top: 60px;
       right: 270px;
-      color: #0267C1;
-      background-color: #1B1B1E;
+      color: #fff;
+      background-color: #345995;
       padding: 10px 20px;
       z-index: 50;
      }
@@ -73,24 +77,24 @@ $fonts: "Poppins";
     position: relative;
     height: 100vh;
     width: 100%;
-    background-color: #0267C1;
+    background-color: whitesmoke;
     padding: 20px 100px;
     z-index: 10;
     overflow: hidden;
 
     .instruction{
      h3{
-      color: #1B1B1E;
+      color: #345995;
       font-weight: bold;
      }
      .booking{
-      color: #1B1B1E;
+      color: #345995;
       font-size: 1.4em;
 
       &:hover{
        text-decoration: none;
        color: #fff;
-       background-color: #1B1B1E;
+       background-color: #345995;
        padding: 10px 25px;
        border-radius: 5px;
       }
@@ -108,23 +112,24 @@ $fonts: "Poppins";
       a{
        color: #fff;
        margin: 20px 10px 20px 0;
-       background-color: #1B1B1E;
+       background-color: #345995;
        padding: 10px 25px;
        border-radius: 5px;
       
        &:hover{
         text-decoration: none;
-        color: #0267C1;
+        color: #fff;
+        background-color: #000;
        }
       }
      }
      .form{
       margin-top: 20px;
 
-      .wrap{
-       min-height: 250px;
-       padding: 0;
-      
+    .removepad{
+      min-height: 250px;
+      padding: 0;
+       
       .destination{
        margin-bottom: 10px;
       }
@@ -132,7 +137,7 @@ $fonts: "Poppins";
        margin-bottom: 10px;
       }
       .cta{
-       background-color: #1B1B1E;
+       background-color: #345995;
        color: #fff;
       }
             .flexible {
@@ -142,7 +147,7 @@ $fonts: "Poppins";
              align-items: center;
       
              a {
-              color: #1B1B1E;
+              color: #345995;
               margin-left: 10px;
               font-weight: bold;
       
@@ -163,6 +168,10 @@ $fonts: "Poppins";
        border-radius: 5px;
        border: none;
        outline: none;
+
+       &:focus{
+        outline: 1px solid #345995;
+       }
       }
       .date-input, .cta {
        padding: 20px;
@@ -170,6 +179,9 @@ $fonts: "Poppins";
        border-radius: 5px;
        border: none;
        outline: none;
+      &:focus {
+          outline: 1px solid #345995;
+        }
       }
      }
           .img-container {
@@ -185,49 +197,55 @@ $fonts: "Poppins";
      
     }
    }
-   @media only screen and (max-width: 700px) {
+   @media only screen and (max-width: 600px) {
     nav{
-     padding: 0 50px;
+     padding: 0 30px;
 
      #navLinks{
-      position: relative;
+      position: absolute;
       display: none;
-      top: 130px;
-      left: 100px;
+      top: 80px;
+      right: 0;
       padding: 0 20px;
       text-align: right;
-      background-color: #1B1B1E;
+      background-color: #345995;
       width: 50%;
 
       li {
         display: block;
         margin-top: 15px;
         margin-bottom: 15px;
+        padding: 10px;
+        &:hover{
+          background-color: #3066BE;
+        }
         a{
-         color: #0267C1;
+         color: #fff;
         }
        }
-       #transport{
-        width: 100%;
-        position: absolute;
-        right: 200px;
-        top: 0;
-       }
+      //  #transport{
+      //   width: 100%;
+      //   position: absolute;
+      //   right: 200px;
+      //   top: 0;
+      //  }
      }
     .icon-1{
      display: block;
+     color: #fff;
     }
     .icon-2{
      display: none;
+     color: #fff;
     }
     }
     .hero{
-     padding: 50px;
+     padding: 30px;
      width: 100%;
      overflow: hidden;
 
      .instruction{
-      margin-top: -30px;
+      margin-top: -20px;
       h3{
        font-size: 1.4em;
       }
@@ -238,4 +256,7 @@ $fonts: "Poppins";
     }
    }
   }
-}
+
+  .col-md-6, .col-md-12{
+padding-left: 0px !important;
+   }

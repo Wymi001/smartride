@@ -6,12 +6,12 @@
           box-sizing: border-box;
 }
 
-* body {
+body {
   font-family: "Poppins";
-  background-color: #1B1B1E;
+  background-color: #345995;
 }
 
-* body nav {
+body nav {
   position: relative;
   height: 80px;
   width: 100%;
@@ -25,133 +25,138 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #1B1B1E;
+  background-color: #345995;
   z-index: 50;
 }
 
-* body nav .brandname a {
+body nav .brandname a {
   color: #fff;
   font-size: 1.5em;
+  font-weight: 900;
 }
 
-* body nav .brandname a span {
-  color: #0267C1;
+body nav .brandname a span {
+  color: #000;
 }
 
-* body nav .brandname a:hover {
+body nav .brandname a:hover {
   text-decoration: none;
 }
 
-* body nav #navLinks {
+body nav #navLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-* body nav #navLinks li {
+body nav #navLinks li {
   margin-left: 30px;
   list-style: none;
-  color: #0267C1;
 }
 
-* body nav #navLinks li a:hover {
+body nav #navLinks li a {
+  font-weight: bold;
+  color: #fff;
+}
+
+body nav #navLinks li a:hover {
   text-decoration: none;
-  color: blue;
 }
 
-* body nav #navLinks .sub-menu {
+body nav #navLinks .sub-menu {
   position: absolute;
   display: none;
   text-align: center;
   top: 60px;
   right: 270px;
-  color: #0267C1;
-  background-color: #1B1B1E;
+  color: #fff;
+  background-color: #345995;
   padding: 10px 20px;
   z-index: 50;
 }
 
-* body nav .icon-1, * body nav .icon-2 {
+body nav .icon-1, body nav .icon-2 {
   display: none;
 }
 
-* body .hero {
+body .hero {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: #0267C1;
+  background-color: whitesmoke;
   padding: 20px 100px;
   z-index: 10;
   overflow: hidden;
 }
 
-* body .hero .instruction h3 {
-  color: #1B1B1E;
+body .hero .instruction h3 {
+  color: #345995;
   font-weight: bold;
 }
 
-* body .hero .instruction .booking {
-  color: #1B1B1E;
+body .hero .instruction .booking {
+  color: #345995;
   font-size: 1.4em;
 }
 
-* body .hero .instruction .booking:hover {
+body .hero .instruction .booking:hover {
   text-decoration: none;
   color: #fff;
-  background-color: #1B1B1E;
+  background-color: #345995;
   padding: 10px 25px;
   border-radius: 5px;
 }
 
-* body .hero .center-div {
+body .hero .center-div {
   margin-top: 40px;
   height: 500px;
   padding: 20px 0;
 }
 
-* body .hero .center-div .option-list {
+body .hero .center-div .option-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-* body .hero .center-div .option-list a {
+body .hero .center-div .option-list a {
   color: #fff;
   margin: 20px 10px 20px 0;
-  background-color: #1B1B1E;
+  background-color: #345995;
   padding: 10px 25px;
   border-radius: 5px;
 }
 
-* body .hero .center-div .option-list a:hover {
+body .hero .center-div .option-list a:hover {
   text-decoration: none;
-  color: #0267C1;
+  color: #fff;
+  background-color: #000;
 }
 
-* body .hero .center-div .form {
+body .hero .center-div .form {
   margin-top: 20px;
 }
 
-* body .hero .center-div .form .wrap {
+body .hero .center-div .form .removepad {
   min-height: 250px;
   padding: 0;
 }
 
-* body .hero .center-div .form .wrap .destination {
+body .hero .center-div .form .removepad .destination {
   margin-bottom: 10px;
 }
 
-* body .hero .center-div .form .wrap .date {
+body .hero .center-div .form .removepad .date {
   margin-bottom: 10px;
 }
 
-* body .hero .center-div .form .wrap .cta {
-  background-color: #1B1B1E;
+body .hero .center-div .form .removepad .cta {
+  background-color: #345995;
   color: #fff;
 }
 
-* body .hero .center-div .form .wrap .flexible {
+body .hero .center-div .form .removepad .flexible {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,22 +169,22 @@
           align-items: center;
 }
 
-* body .hero .center-div .form .wrap .flexible a {
-  color: #1B1B1E;
+body .hero .center-div .form .removepad .flexible a {
+  color: #345995;
   margin-left: 10px;
   font-weight: bold;
 }
 
-* body .hero .center-div .form .wrap .flexible a:hover {
+body .hero .center-div .form .removepad .flexible a:hover {
   text-decoration: none;
 }
 
-* body .hero .center-div .form .wrap .flexible .checkbox {
+body .hero .center-div .form .removepad .flexible .checkbox {
   width: 20px;
   height: 20px;
 }
 
-* body .hero .center-div .form .from-where, * body .hero .center-div .form .to-where {
+body .hero .center-div .form .from-where, body .hero .center-div .form .to-where {
   padding: 20px;
   width: 100%;
   border-radius: 5px;
@@ -187,7 +192,11 @@
   outline: none;
 }
 
-* body .hero .center-div .form .date-input, * body .hero .center-div .form .cta {
+body .hero .center-div .form .from-where:focus, body .hero .center-div .form .to-where:focus {
+  outline: 1px solid #345995;
+}
+
+body .hero .center-div .form .date-input, body .hero .center-div .form .cta {
   padding: 20px;
   width: 100%;
   border-radius: 5px;
@@ -195,63 +204,71 @@
   outline: none;
 }
 
-* body .hero .center-div .img-container {
+body .hero .center-div .form .date-input:focus, body .hero .center-div .form .cta:focus {
+  outline: 1px solid #345995;
+}
+
+body .hero .center-div .img-container {
   height: auto;
 }
 
-* body .hero .center-div .img-container .right-banner {
+body .hero .center-div .img-container .right-banner {
   height: 600px;
   margin-top: -170px;
   margin-left: -120px;
 }
 
-@media only screen and (max-width: 700px) {
-  * body nav {
-    padding: 0 50px;
+@media only screen and (max-width: 600px) {
+  body nav {
+    padding: 0 30px;
   }
-  * body nav #navLinks {
-    position: relative;
+  body nav #navLinks {
+    position: absolute;
     display: none;
-    top: 130px;
-    left: 100px;
+    top: 80px;
+    right: 0;
     padding: 0 20px;
     text-align: right;
-    background-color: #1B1B1E;
+    background-color: #345995;
     width: 50%;
   }
-  * body nav #navLinks li {
+  body nav #navLinks li {
     display: block;
     margin-top: 15px;
     margin-bottom: 15px;
+    padding: 10px;
   }
-  * body nav #navLinks li a {
-    color: #0267C1;
+  body nav #navLinks li:hover {
+    background-color: #3066BE;
   }
-  * body nav #navLinks #transport {
-    width: 100%;
-    position: absolute;
-    right: 200px;
-    top: 0;
+  body nav #navLinks li a {
+    color: #fff;
   }
-  * body nav .icon-1 {
+  body nav .icon-1 {
     display: block;
+    color: #fff;
   }
-  * body nav .icon-2 {
+  body nav .icon-2 {
     display: none;
+    color: #fff;
   }
-  * body .hero {
-    padding: 50px;
+  body .hero {
+    padding: 30px;
     width: 100%;
     overflow: hidden;
   }
-  * body .hero .instruction {
-    margin-top: -30px;
+  body .hero .instruction {
+    margin-top: -20px;
   }
-  * body .hero .instruction h3 {
+  body .hero .instruction h3 {
     font-size: 1.4em;
   }
-  * body .hero .right-banner {
+  body .hero .right-banner {
     display: none;
   }
+}
+
+.col-md-6, .col-md-12 {
+  padding-left: 0px !important;
 }
 /*# sourceMappingURL=main.css.map */
