@@ -75,7 +75,7 @@ $fonts: "Poppins";
    }
    .hero{
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: whitesmoke;
     padding: 20px 100px;
@@ -197,16 +197,82 @@ $fonts: "Poppins";
      
     }
    }
-     @media only screen and (max-width: 1000px){
+   .login-section{
+    min-height: 350px;
+    background-color: #345995;
+    width: 100%;
+    padding: 0 100px;
+
+    h2{
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.3em;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    p{
+      color: #fff;
+      margin: 60px auto;
+    }
+
+    form{
+      color: #345995;
+      min-height: 70vh;
+      width: 40vw;
+      background-color: whitesmoke;
+      margin: 60px auto;
+      padding: 20px;
+      border-radius: 5px;
+
+      h2{
+        text-align: center;
+        margin: 20px;
+        color: #345995;
+      }
+
+      .label{
+        text-align: left;
+        color: #345995;
+        font-size: 1.1em;
+      }
+
+      input{
+      padding: 20px;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      margin: 10px 0 20px;
+        
+      &:focus {
+        outline: 1px solid #345995;
+      }
+      }
+      .cta{
+        background-color: #345995;
+        color: #fff;
+      }
+    }
+   }
+    @media only screen and (max-width: 1000px){
       .hero{
         background-image: url(./assets/asset3.jpg);
       }
-      img{
-        display: none;
-      }
+         img {
+           display: none;
+         }
+    
+         .login-section {
+           padding: 0 100px;
+    
+           form {
+             width: 80%;
+           }
+         }
       
-     }
-     @media only screen and (max-width: 900px) {
+    }
+    @media only screen and (max-width: 900px) {
        nav {
          padding: 0 30px;
        }
@@ -222,7 +288,14 @@ $fonts: "Poppins";
        img{
         display: none;
        }
-     }
+       .login-section {
+               padding: 0 50px;
+      
+               form {
+                 width: 80%;
+               }
+       }
+    }
    @media only screen and (max-width: 700px) {
     nav{
      padding: 0 30px;
@@ -288,6 +361,13 @@ $fonts: "Poppins";
      .right-banner{
       display: none;
      }
+    }
+    .login-section{
+      padding: 0 30px;
+
+      form{
+        width: 100%;
+      }
     }
    }
   }

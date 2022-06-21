@@ -81,7 +81,7 @@ body nav .icon-1, body nav .icon-2 {
 
 body .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: whitesmoke;
   padding: 20px 100px;
@@ -218,12 +218,78 @@ body .hero .center-div .img-container .right-banner {
   margin-left: -120px;
 }
 
+body .login-section {
+  min-height: 350px;
+  background-color: #345995;
+  width: 100%;
+  padding: 0 100px;
+}
+
+body .login-section h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 40px;
+}
+
+body .login-section p {
+  color: #fff;
+  margin: 60px auto;
+}
+
+body .login-section form {
+  color: #345995;
+  min-height: 70vh;
+  width: 40vw;
+  background-color: whitesmoke;
+  margin: 60px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+body .login-section form h2 {
+  text-align: center;
+  margin: 20px;
+  color: #345995;
+}
+
+body .login-section form .label {
+  text-align: left;
+  color: #345995;
+  font-size: 1.1em;
+}
+
+body .login-section form input {
+  padding: 20px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 10px 0 20px;
+}
+
+body .login-section form input:focus {
+  outline: 1px solid #345995;
+}
+
+body .login-section form .cta {
+  background-color: #345995;
+  color: #fff;
+}
+
 @media only screen and (max-width: 1000px) {
   body .hero {
     background-image: url(./assets/asset3.jpg);
   }
   body img {
     display: none;
+  }
+  body .login-section {
+    padding: 0 100px;
+  }
+  body .login-section form {
+    width: 80%;
   }
 }
 
@@ -239,6 +305,12 @@ body .hero .center-div .img-container .right-banner {
   }
   body img {
     display: none;
+  }
+  body .login-section {
+    padding: 0 50px;
+  }
+  body .login-section form {
+    width: 80%;
   }
 }
 
@@ -293,6 +365,12 @@ body .hero .center-div .img-container .right-banner {
   }
   body .hero .right-banner {
     display: none;
+  }
+  body .login-section {
+    padding: 0 30px;
+  }
+  body .login-section form {
+    width: 100%;
   }
 }
 
