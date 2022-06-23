@@ -33,7 +33,7 @@
         </ul> -->
         <li onmouseover="hideSubLinks()"><a href="#aboutUs">About Us</a></li>
         <li><a href="">Contact</a></li>
-        <li><a href="#loginSection" class="login" onclick="displayLogin()">Login</a></li>
+        <li><a href="#login-form" class="login" onclick="displayLogin()">Login</a></li>
       </ul>
       <a href="javascript:void(0)" class="icon-1" id="openIcon" onclick="showLinks()"
         ><i class="fas fa-bars"></i
@@ -93,17 +93,20 @@
           <h2 id="aboutUs">ABOUT US</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia eligendi perspiciatis, inventore fugit tenetur quae incidunt iusto dolores architecto sit neque asperiores ipsa quidem! Facilis, numquam sit rem repellat neque vero voluptate consequatur natus. Esse ipsam sit doloremque cupiditate harum placeat. Itaque, possimus! Ex modi nobis facilis error blanditiis recusandae, nemo nam autem. Cumque libero id at eaque amet! Repellendus similique qui autem dolorem perspiciatis iusto error quis molestiae sed, est eligendi, incidunt esse perferendis accusamus enim accusantium. Velit voluptas libero nobis neque vero eveniet sunt earum perspiciatis et praesentium. Ullam enim est ut eveniet fuga voluptates, consequatur, dolorum atque nesciunt quia, laudantium deleniti corporis error mollitia. Consequuntur obcaecati officiis qui iste beatae molestias quisquam in dicta. Voluptate atque praesentium repudiandae vero. Sequi minus iusto animi veniam, aut cumque, temporibus quae eos nemo amet laudantium obcaecati, fugiat nesciunt sapiente rerum cum qui eligendi veritatis! Atque culpa ex soluta sequi, eligendi laudantium fuga expedita reprehenderit, quis quos pariatur saepe sapiente. Nostrum iste saepe laborum! Sequi, repellendus eaque consectetur repudiandae distinctio incidunt autem optio similique soluta, impedit qui esse corporis harum accusantium aliquam dolores vero expedita neque laborum ratione consequuntur quidem numquam vitae facere. Dolorum fugiat velit consequuntur facere ipsam, rerum cum.</p>
         </div>
-        <div class="col-md-6">
-          <h2>Login here please if you already have an account</h2>
-          <form action="" id="loginSection">
+        <div class="col-md-6" id="main-holder">
+          <h2 id="login-header">Login here please if you already have an account</h2>
+          <div id="login-err-msg-holder">
+            <p id="login-err-msg">Invalid Username <span id="err-msg-sec-line">and/or password</span></p>
+          </div>
+          <form action="" id="login-form">
             <h2>SMARTRIDE</h2>
             <label class="label" for="username">Username</label> <br>
-            <input type="text" name="username" id="userDetail" placeholder="Enter Username">
+            <input type="text" name="username" id="username-field" placeholder="Enter Username">
             <br>
             <label class="label" for="password">Password</label> <br>
-            <input type="password" name="password" id="userPassword" placeholder="Enter Password">
+            <input type="password" name="password" id="passwor-field" placeholder="Enter Password">
             <br> <br>
-            <input type="button" id="loginButton" value="LOGIN" class="cta">
+            <input type="submit" id="login-form-submit" value="LOGIN" class="cta">
           </form>
         </div>
       </div>

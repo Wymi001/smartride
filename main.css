@@ -238,6 +238,18 @@ body .login-section p {
   margin: 60px auto;
 }
 
+body .login-section #login-err-msg-holder {
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  text-align: center;
+}
+
+body .login-section #login-err-msg-holder #login-err-msg {
+  opacity: 0;
+  color: red;
+}
+
 body .login-section form {
   color: #345995;
   min-height: 70vh;
@@ -287,6 +299,9 @@ body .login-section form .cta {
   }
   body .login-section {
     padding: 0 100px;
+  }
+  body .login-section #login-err-msg-holder {
+    top: -20px;
   }
   body .login-section form {
     width: 80%;

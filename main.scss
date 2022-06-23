@@ -215,6 +215,16 @@ $fonts: "Poppins";
       color: #fff;
       margin: 60px auto;
     }
+    #login-err-msg-holder{
+      position: absolute;
+      width: 100%;
+      top: 10px;
+      text-align: center;
+      #login-err-msg{
+        opacity: 0;
+        color: red;
+      }
+    }
 
     form{
       color: #345995;
@@ -265,6 +275,10 @@ $fonts: "Poppins";
     
          .login-section {
            padding: 0 100px;
+
+          #login-err-msg-holder {
+              top: -20px;
+            }
     
            form {
              width: 80%;

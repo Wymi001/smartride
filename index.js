@@ -12,6 +12,22 @@ function hideLinks() {
   document.getElementById ("openIcon").style.display = "block";
 }
 
+const loginForm = document.getElementById('login-form');
+const loginButton = document.getElementById('login-form-submit');
+const loginErrorMsg = document.getElementById('login-err-msg');
+
+loginButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  const username = loginForm.username.value;
+  const password = loginForm.password.value;
+
+  if (username === 'Adeyemi' && password === 'wisdom123#') {
+    alert('Welcome Adeyemi, You have successfully logged in');
+  } else {
+    loginErrorMsg.style.opacity = 1;
+  }
+})
+
 // REVEAL AND HIDE SUB-MENU
 // function revealSubLinks() {
 //   document.getElementById("transport").style.display = "block";
